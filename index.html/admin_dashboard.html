@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Dashboard</title>
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+        <style>
+            .div{
+                border-style: solid;
+                border-width: 2px;
+                background-color: rgb(59, 128, 197);
+                height: 600px;
+            }
+            .box{
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+                border-style: solid;
+                border-width: 2px;
+                height: 200px;
+                width: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid" align="center">
+            <div class="wrapper">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="Logo-removebg-preview.png" alt="" width=250>
+                    </div>
+                    <div class="text-dark">
+                        <h3>Coaching Institute Name</h3>
+                    </div>
+                    <div class="nav_right">
+                        <ul>
+                            <li class="nr_li li_main"><img src="user_icon.png" alt="profile_image">
+        
+                                <div class="dd_menu">
+                                    <div class="dd_left">
+                                        <ul>
+                                            <li><i class="fas fa-cog"></i></li>
+                                            <li><i class="fas fa-sign-out-alt"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dd_right">
+                                        <ul>
+                                            <li>Settings</li>
+                                            <li>Logout</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        
+            </div>
+
+            </div>
+            <div class="row div" align="center">
+                <div class="col-2 border border-white p-4 div">
+
+                    <div class="col p-2 text-center">
+                            <a class="nav-link active text-white" aria-current="page" href="">STUDENT</a>
+                        </div>
+                        <div class="col p-2 text-center">
+                            <a class="nav-link active text-white" aria-current="page" href="">FACULTY</a>
+                        </div>
+                        <div class="col p-2 text-center">
+                            <a class="nav-link active text-white" aria-current="page" href="#">BATCHES</a>
+                        </div>
+                        <div class="col p-2 text-center">
+                            <a class="nav-link active text-white" aria-current="page" href="">FEE MANAGER</a>
+                        </div>
+                        <div class="col p-2 text-center">
+                            <a class="nav-link active text-white" aria-current="page" href="">MY INSTITUTE  </a>
+                        </div>                    
+                    </div>
+    
+                <div class="col-10 p-4 bg-primary div">
+                    <div class="row mb-4 text-white"><h2>Available Data Of Your Institute</h2></div>
+                    <div class="row" align="center">
+                        <div class="col-6">
+                            <div class="container box text-white"><h4>Total Admitted Students</h4></div>
+                        </div>
+                        <div class="col-6">
+                            <div class="container box text-white"><h4>Total Hired Faculties</h4></div>
+                        </div>
+                    </div>
+                    <div class="row mt-5" align="center">
+                        <div class="col-6">
+                            <div class="container box text-white"><h4>Total Active Batches</h4></div>
+                        </div>
+                        <div class="col-6">
+                            <div class="container box text-white"><h4>Demo Statistics</h4></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" align="center">
+                <div class="col-3">
+                    <h5>CopyRight @StackBox</h5>
+                </div>
+                <div class="col-6">
+                    Terms & Conditions
+                </div>
+                <div class="col-3">
+                    Contanct Sources
+                </div>
+            </div>
+        </div>
+        <script>
+            var li_main = document.querySelector(".li_main");
+            li_main.addEventListener("click",function(){
+                this.classList.toggle("active");
+            })
+        </script>
+    </body>
+</html>
